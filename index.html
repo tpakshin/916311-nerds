@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>nёrds</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+<header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+		<img src="img/index-logo.svg" width="150" height="40" alt="Логотип дизайн студии «nёrds»">
+		</a>
+		<ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+		  <li><a href="clients.html">Клиенты</a></li>
+		  <li><a href="catalog.html">Магазин</a></li>
+		  <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+		<ul class="shopping-cart-navigation">
+          <li class="shopping-cart-link">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+	<main class="container">
+		<h1 class="visually-hidden">Дизайн студия «nёrds»</h1>
+		<!-- НЕ нужно было размечать 
+		<section class="advantage">
+        <h2 class="visually-hidden">Преимущества</h2>
+		<h3>Долго, дорого, скрупулезно
+		</h3>
+		<p>
+		Математически выверенный дизайн 
+для вашего сайта или мобильного приложения.
+		<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		</p>
+		</section>
+		-->
+		<section class="catalog">
+			<h2 class="visually-hidden">Все услуги</h2>		
+			<ul class="catalog-list">
+			<li class="catalog-item">
+			<h3>
+			<a href="catalog-item.html">ВЕБ-САЙТЫ</a>
+			</h3>
+			<p class="catalog-item-image">
+			<a href="catalog-item.html"><img src="img/web-site.jpg" width="220" height="160" alt="Веб-саты">
+			</a>
+			</p>
+			<p>Мир никогда не будет прежним после того как увидит ваш сайт!
+			<a class="button" href="#">ЗАКАЗАТЬ</a></p>
+			</li>
+			<li class="catalog-item">
+			<h3>
+			<a href="catalog-item.html">ПРИЛОЖЕНИЯ</a>
+			</h3>
+			<p class="catalog-item-image">
+			<a href="catalog-item.html"><img src="img/apps.jpg" width="220" height="160" alt="Приложения">
+			</a>
+			</p>
+			<p>Покорите топ-10 приложений в AppStore и Google Play
+			<a class="button" href="#">ЗАКАЗАТЬ</a></p>
+			</li>
+			<li class="catalog-item">
+			<h3>
+			<a href="catalog-item.html">ПРЕЗЕНТАЦИИ</a>
+			</h3>
+			<p class="catalog-item-image">
+			<a href="catalog-item.html"><img src="img/presentations.jpg" width="220" height="160" alt="Презентации">
+			</a>
+			</p>
+			<p>Вы даже не подозреваете, 
+насколько вы изумительны!
+			<a class="button" href="#">ЗАКАЗАТЬ</a></p>
+			</li>
+		<!-- НЕ нужно было размечать
+		<section class="features">
+        <h2 class="visually-hidden">О нас</h2>
+        <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+		<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+превыше креатива. Работаем не покладая рук, как роботы.</p>
+		<h3>Выполняем заказы на разработку:</h3>
+		<ul class="features-list">
+          <li class="features-item">
+            Веб-сайтов любой сложности		
+          </li>
+		  <li class="features-item">
+            Мобильных приложений для iOS и Android
+          </li>
+		  <li class="features-item">
+            Слайдшоу и видео для корпоративных презентаций		
+          </li>         
+        </ul>
+      </section>
+	  <section class="studio">
+	  <img src="img/colored-logo.svg" width="360" height="180" alt="Логотип дизайн студии «nёrds»">
+	  <p>C 2004 года Любим точность во всем:</p>
+	  <ul class="studio-list">
+          <li class="studio-item">
+            <b>146%</b> Уровень самоотдачи		
+          </li>
+		  <li class="studio-item">
+            <b>100%</b>Соблюдение сроков		
+          </li>
+		  <li class="studio-item">
+            <b>50%</b>Минимальная предоплата		
+          </li>
+		</section>
+	<section class="customers">
+	<ul class="customers-list">
+          <li> <a class="customer-logo"> 
+		  <img src="#" width="240" height="120" alt="">
+		  </a>
+		  <li> <a class="customer-logo"> 
+		  <img src="#" width="240" height="120" alt="HTML Academy">
+		  </a>
+		  </li>
+		  <li> <a class="customer-logo"> 
+		  <img src="#" width="240" height="120" alt="Barbershop Borodinski">
+		  </a>
+		  </li>
+		  <li> <a class="customer-logo"> 
+		  <img src="#" width="240" height="120" alt="Pink">
+		  </a>
+		  </li>
+		  <li> <a class="customer-logo"> 
+		  <img src="#" width="240" height="120" alt="MISHKA">
+		  </a>
+		  </li>
+        </ul>
+	</section>
+	<footer class="main-footer">
+    <img src="#" width="380" height="240" alt="Карта с адресом дизайн студии">
+	<p class="footer-contacts">NЁRDS DESIGN STUDIO<br>
+	191186, Санкт-Петербург,<br>
+	ул. Б. Конюшенная, Д. 19/8<br>
+	тел. +7 (812) 275-75-75<br>
+	<a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
+	</p>-->
+	<div class="footer-social">
+        <b>Давайте дружить, это выгодно!</b>
+		<p>Скидка 10% для друзей из социальных сетей.</p>
+        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+      </div>
+	</footer> 
+	</main>
   </body>
 </html>
