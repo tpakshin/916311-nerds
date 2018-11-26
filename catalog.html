@@ -25,9 +25,71 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
 	 <!-- Позже здесь будет блок который мы разметим -->
 	 <section class="filters">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!-- Здесь будет форма -->
-      </section>
+        <h2 class="visually-hidden">Фильтр макетов</h2>
+        <form class="filter" method="get"
+          action="https://echo.htmlacademy.ru">
+     <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+            <input type="radio" name="layout-group" value="responsive" id="filter-responsive" checked>
+            <label for="filter-responsive">
+              Адаптивная
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="layout-group" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">
+              Фиксированная
+            </label>
+          </li>
+          <li>
+            <input type="radio" name="layout-group" value="liquid" id="filter-liquid">
+            <label for="filter-liquid">
+              Резиновая
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+	 <fieldset>
+    <legend>Особенности:</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">
+              Слайдер
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="advantages" id="filter-advantages">
+            <label for="filter-advantages">
+              Блок преимуществ
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">
+              Новости
+            </label>
+          </li>
+		  <li>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">
+              Галерея
+            </label>
+          </li>
+		  <li>
+            <input type="checkbox" name="shopcart" id="filter-shopcart">
+            <label for="filter-shopcart">
+              Корзина
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      
+      <button type="submit">Показать</button>
+    </form>
+    </section>
 	 <section class="catalog">
         <h2 class="visually-hidden">Список готовых шаблонов</h2>
         <ul class="catalog-list">
@@ -90,6 +152,28 @@
 	тел. +7 (812) 275-75-75<br>
 	<a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
 	</p>-->
+	<section class="contact">
+        <h2>Напишите нам</h2>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          
+            <p class="contact-item">
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contact-item">
+            <label for="contact-email">Телефон:</label>
+            <input id="contact-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+		  <p class="contact-item">
+            <label for="contact-comment">Текст письма:</label>
+            <textarea name="comment" id="contact-comment" rows="5">В свободной форме</textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">
+          <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
+        </button>
+		</form> 
+      </section>
 	<div class="footer-social">
         <ul class="social-networks">
 		<li><a class="social-button" href="#">Вконтакте</a></li>

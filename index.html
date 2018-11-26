@@ -119,6 +119,28 @@
 	тел. +7 (812) 275-75-75<br>
 	<a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
 	</p>-->
+	<section class="contact">
+        <h2>Напишите нам</h2>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          
+            <p class="contact-item">
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="contact-item">
+            <label for="contact-email">Телефон:</label>
+            <input id="contact-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+		  <p class="contact-item">
+            <label for="contact-comment">Текст письма:</label>
+            <textarea name="comment" id="contact-comment" rows="5">В свободной форме</textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">
+          <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
+        </button>
+		</form> 
+      </section>
 	<div class="footer-social">
         <ul class="social-networks">
 		<li><a class="social-button" href="#">Вконтакте</a></li>
@@ -128,6 +150,7 @@
 		<p><b>Давайте дружить, это выгодно!</b></p>
 		<p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
+	
 	</footer> 
 	</main>
   </body>
