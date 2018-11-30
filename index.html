@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Дизайн студия «nёrds»</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html">
+                <a class="main-header-logo">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии «nёrds»">
                 </a>
                 <ul class="site-navigation">
@@ -17,7 +20,7 @@
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="shopping-cart-navigation">
-                    <li class="shopping-cart-link">Корзина</li>
+                    <li class="shopping-cart-link"><a href="shopping-cart.html">Корзина</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,7 +33,7 @@
                 </h3>
                 <p>
                 Математически выверенный дизайн для вашего сайта или мобильного приложения.
-                <a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                <a class="button" href="#">Узнать больше</a>
                 </p>
                 </section>
                 -->
@@ -39,21 +42,21 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <img src="img/product-1.png" width="300" height="146" alt="Веб-саты">
-                        <h3>ВЕБ-САЙТЫ</h3>
+                        <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <a class="button" href="#">ЗАКАЗАТЬ</a>
+                        <a class="button red" href="#">Заказать</a>
                     </li>
                     <li class="catalog-item">
                         <img src="img/product-2.png" width="300" height="146" alt="Приложения">
-                        <h3>ПРИЛОЖЕНИЯ</h3>
+                        <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a class="button" href="#">ЗАКАЗАТЬ</a>
+                        <a class="button green" href="#">Заказать</a>
                     </li>
                     <li class="catalog-item">
                         <img src="img/product-3.png" width="300" height="146" alt="Презентации">
-                        <h3>ПРЕЗЕНТАЦИИ</h3>
+                        <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a class="button" href="#">ЗАКАЗАТЬ</a>
+                        <a class="button yellow" href="#">Заказать</a>
                     </li>
                 </ul>
             </section>
@@ -109,16 +112,9 @@
                   </li>
                       </ul>
                 </section>-->
-            <footer class="main-footer">
-                <!-- НЕ нужно было размечать
-                    <img src="img/map.png" width="1440" height="416" alt="Карта с адресом дизайн студии">
-                    <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
-                    <p class="footer-contacts">Nёrds design studio<br>
-                    191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, Д. 19/8<br>
-                    тел. +7 (812) 275-75-75<br>
-                    <a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
-                    </p>-->
+            </main>
+			<footer class="main-footer">
+                
                 <section class="contact">
                     <h2>Напишите нам</h2>
                     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
@@ -132,7 +128,7 @@
                         </p>
                         <p class="contact-item">
                             <label for="contact-comment">Текст письма:</label>
-                            <textarea name="comment" id="contact-comment" rows="5">В свободной форме</textarea>
+                            <textarea name="comment" id="contact-comment" placeholder="В свободной форме"></textarea>
                         </p>
                         <button class="button" type="submit">Отправить</button>
                         <button class="modal-close" type="button">
@@ -142,14 +138,24 @@
                 </section>
                 <div class="footer-social">
                     <ul class="social-networks">
-                        <li><a class="social-button" aria-label="Vkontakte" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" aria-label="Facebook" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" aria-label="Instagram" href="#">Инстаграм</a></li>
+                        <li><a class="social-button" aria-label="Наша группа Vkontakte" href="#">Вконтакте</a></li>
+                        <li><a class="social-button" aria-label="Наша группа в Facebook" href="#">Фейсбук</a></li>
+                        <li><a class="social-button" aria-label="Наша страница в Instagram" href="#">Инстаграм</a></li>
                     </ul>
                     <p><b>Давайте дружить, это выгодно!</b></p>
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </footer>
-        </main>
+			<!-- НЕ нужно было размечать
+			<div>
+            <img src="img/map.png" width="1440" height="416" alt="Карта с адресом дизайн студии">
+            <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
+            <p class="footer-contacts">Nёrds design studio<br>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, Д. 19/8<br>
+            тел. +7 (812) 275-75-75<br>
+            <a class="button" href="contacts.html">Напишите нам/a>
+            </p>
+			</div>-->
     </body>
 </html>
