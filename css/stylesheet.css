@@ -22,22 +22,26 @@ a {
   background-color: #eeeeee;
 }
 
-.site-navigation {
+.site-navigation,
+ .shopping-cart-navigation {
   list-style: none;
 }
 
 .site-navigation {
   color: #000000;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus, {
+.site-navigation a:focus {
  color: #fb565a;
 }
 
-.site-navigation a:active, {
- color: #fb565a;
-}
+/*Цвет вроде тоже но он полупроазрачный чтоли, не знаю как сделать
+
+.site-navigation a:active {
+ color: }
+*/
 
 .catalog-list {
   list-style: none;
@@ -47,7 +51,7 @@ a {
 text-transform: uppercase;	
 }
 
-.catalog-item p{
+.catalog-item p {
   text-transform: none;
 }
 
@@ -61,8 +65,9 @@ text-transform: uppercase;
 }
 .button.red {
  background-color: #fb565a;
-}
+  }
 
+ 
 .button.green {
  background-color: #00ca74;
 }
@@ -70,3 +75,71 @@ text-transform: uppercase;
 .button.yellow {
  background-color: #efc84a;
 }
+
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.footer-label {
+font: inherit;
+font-size: 36px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+text-decoration: underline;
+}
+
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.modal h2 {
+font-size: 45px;
+line-height: 45px;
+}
+
+.contact-form {
+
+  font: inherit;
+  border: 2px solid ##444444;
+}
+
+.contact-form input:focus {
+  border-color: #000000;
+  color: #000000;
+}
+
+.contact-form input:invalid {
+border-color: #e74246;
+  color: #e74246;
+}
+
