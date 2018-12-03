@@ -12,13 +12,13 @@ body {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-
   background-color: #eeeeee;
 }
 
@@ -27,7 +27,8 @@ a {
   list-style: none;
 }
 
-.site-navigation {
+.site-navigation,
+.shopping-cart-navigation {
   color: #000000;
   text-transform: uppercase;
 }
@@ -48,7 +49,7 @@ a {
 }
 
 .catalog-item {
-text-transform: uppercase;	
+text-transform: uppercase;
 }
 
 .catalog-item p {
@@ -74,7 +75,13 @@ text-transform: uppercase;
 
 .button.yellow {
  background-color: #efc84a;
-}
+ }
+ 
+ .button.grey {
+background-color: #dfdfdf;
+color: #000000;
+ }
+
 
 .filter fieldset {
   border: none;
@@ -96,7 +103,6 @@ text-transform: uppercase;
 
 .filter-input:disabled + label {
   color: #000000;
-
   opacity: 0.5;
 }
 
