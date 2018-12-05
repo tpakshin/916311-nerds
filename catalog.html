@@ -89,7 +89,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <button type="submit" class="button grey">Показать</button>
+                    <button type="submit" class="button button-grey">Показать</button>
                 </form>
             </section>
             <section class="catalog">
@@ -97,10 +97,10 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <img src="img/template-1.jpg" width="360" height="576" alt="SEDONA - информационный сайт для туристов">
-                        <div>
+                        <div class="catalog-pop-up">
                             <h3><a href="#">Sedona</a></h3>
                             <p>Информационный сайт для туристов</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -108,7 +108,7 @@
                         <div>
                             <h3><a href="#">Pink App</a></h3>
                             <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -116,7 +116,7 @@
                         <div>
                             <h3><a href="#">Barbershop</a></h3>
                             <p>Сайт салона красоты. Для мужчин, да.</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -124,7 +124,7 @@
                         <div>
                             <h3><a href="#">Mishka</a></h3>
                             <p>Интернет магазин вязаных игрушек</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -132,7 +132,7 @@
                         <div>
                             <h3><a href="#">A plus</a></h3>
                             <p>Лендинг курсов повышения квалификации</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -140,7 +140,7 @@
                         <div>
                             <h3><a href="#">Кваст</a></h3>
                             <p>Промо-сайт производителя крафтового кваса</p>
-                            <a class="button red" href="#"><b>9 900 руб.</b></a>
+                            <a class="button button-red" href="#"><b>9 900 руб.</b></a>
                         </div>
                     </li>
                 </ul>
@@ -158,8 +158,12 @@
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </footer>
-			<section class="contact">
+			<section class="contact pop-up">
                     <h2>Напишите нам</h2>
+					<button class="button button-grey" type="submit">Отправить</button>
+                        <button class="modal-close" type="button">
+                        <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
+                    </button>
                     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
                         <p class="contact-item">
                             <label for="contact-name">Ваше имя:</label>
@@ -173,10 +177,6 @@
                             <label for="contact-comment">Текст письма:</label>
                             <textarea name="comment" id="contact-comment" rows="5">В свободной форме</textarea>
                         </p>
-                        <button class="button" type="submit">Отправить</button>
-                        <button class="modal-close" type="button">
-                        <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
-                        </button>
                     </form>
                 </section>
 				<!-- НЕ нужно было размечать
