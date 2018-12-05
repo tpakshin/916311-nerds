@@ -1,18 +1,25 @@
 body {
   margin: 0;
-  
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #283136;
-  
   background-color: #ffffff; 
 }
 
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus  {
+opacity: 0.8; 
+}
+
+.main-header-logo a:active {
+opacity: 0.3; 	
 }
 
 .main-navigation {
@@ -23,7 +30,7 @@ a {
 }
 
 .site-navigation,
- .shopping-cart-navigation {
+.shopping-cart-navigation {
   list-style: none;
 }
 
@@ -36,6 +43,16 @@ a {
 .site-navigation a:hover,
 .site-navigation a:focus {
  color: #fb565a;
+ outline: none;
+}
+.shopping-cart-navigation a:hover,
+.shopping-cart-navigation a:focus {
+ color: #fb565a;
+ outline: none;
+}
+.site-navigation a:active,
+.shopping-cart-navigation a:active {
+ color: rgba(0, 0, 0, 0.3);
 }
 
 /*Цвет вроде тоже но он полупроазрачный чтоли, не знаю как сделать
@@ -55,64 +72,141 @@ text-transform: uppercase;
 .catalog-item p {
   text-transform: none;
 }
+.catalog-item h3 {
+color: #000000;
+font-size: 24px;
+line-height: 30px;
+}
+
+.page-title {
+color: #000000;
+font-size: 55px;
+line-height: 55px;	
+}
 
 .button {
   font: inherit;
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
 }
-.button.red {
+.button.button-red {
  background-color: #fb565a;
-  }
+ }
+  
+.button.button-red a:hover,
+.button.button-red a:focus {
+background-color: #e74246;	
+}
 
+.button.button-red a:active {
+background-color: #d7373b;
+color: rgba(255,255,255, 0.3);
+box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+}
  
-.button.green {
+ .button.button-green {
  background-color: #00ca74;
 }
 
-.button.yellow {
+.button.button-green a:hover,
+.button.button-green a:focus {
+background-color: #00bc6c;	
+}
+
+.button.button-green a:active {
+background-color: #00aa62;
+color: rgba(255,255,255, 0.3);
+box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button.button-yellow {
  background-color: #efc84a;
  }
+
+.button.button-yellow a:hover,
+.button.button-yellow  a:focus {
+background-color: #eab534;	
+}
+
+.button.button-yellow  a:active {
+background-color: #e5a722;
+color: rgba(255,255,255, 0.3);
+box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+}
  
- .button.grey {
+.button.button-grey {
 background-color: #dfdfdf;
 color: #000000;
  }
 
+.button.button-grey:hover,
+.button.button-grey:focus {
+background-color: #dfdfdf;
+}
 
+.button.button-grey:active {
+background-color: #d5d5d5;
+color: rgba(0, 0, 0, 0.3);
+box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);	
+}
 .filter fieldset {
   border: none;
 }
 .filter legend {
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
+
+
 .filter ul {
   list-style: none;
-  line-height: 18px;
+  line-height: 20px;
+}
+.filter-input + label {
+	
 }
 
 .filter-input:hover + label,
 .filter-input:focus + label {
-  color: #663d15;
+  
 }
 
 .filter-input:disabled + label {
-  color: #000000;
-  opacity: 0.5;
+  color: rgba(40, 49, 54, 0.3);
+  }
+  
+
+.catalog-pop-up {
+background-color: #eeeeee;
+}
+.contact-form {
+color: #444444;	
+}
+
+.contact-form:focus {
+color: #000000;	
+
+}
+
+
+.contact-form label {
+color: #000000;	
+line-height: 18px;
 }
 
 .footer-label {
 font: inherit;
+color: #000000;
 font-size: 36px;
 line-height: 36px;
 font-weight: 700;
 text-align: center;
-text-decoration: underline;
 }
 
 
@@ -123,9 +217,23 @@ text-decoration: underline;
 .footer-social ul {
   list-style: none;
 }
+.footer-text {
+line-height: 22px;	
+}
 
 .social-button {
   color: #ffffff;
+  background-color: #e1e1e1;
+}
+.social-button a:hover,
+.social-button a:focus {
+background-color: #e74246;		
+}
+
+.social-button a:active {
+background-color: #d7373b;
+color: rgba(255,255,255, 0.3);
+box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);	
 }
 
 .modal h2 {
@@ -136,7 +244,7 @@ line-height: 45px;
 .contact-form {
 
   font: inherit;
-  border: 2px solid ##444444;
+  border: 2px solid #444444;
 }
 
 .contact-form input:focus {
