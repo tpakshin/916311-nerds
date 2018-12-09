@@ -296,15 +296,14 @@ body {
 }
 
 .main-header {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 
-  /* Временно для сетки */
-  min-height: 120px;
+  
 }
 
 .main-navigation {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -320,7 +319,7 @@ body {
  .site-navigation {
   margin: 0;
   padding: 0;
-  
+  width: 440px;
   list-style: none;
     
 }
@@ -328,6 +327,7 @@ body {
 .shopping-cart-navigation {
   margin: 0;
   padding: 0;
+  width: 120px;
   margin-left: auto;
   list-style: none; 
 }
@@ -343,11 +343,10 @@ body {
 }
 
 .products-list {
-display: flex;
-justify-content: space-between;
-margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
   padding: 0;
-
   list-style: none;	
 	
 }
