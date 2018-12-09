@@ -27,6 +27,7 @@ opacity: 0.3;
   line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
+  width: 100%;
 }
 
 .site-navigation,
@@ -279,5 +280,144 @@ line-height: 45px;
 .contact-form input:invalid {
 border-color: #e74246;
   color: #e74246;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  
+}
+
+.main-header {
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+.main-navigation {
+   display: flex;
+   align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ 
+ .main-header-logo {
+  width: 160px;
+  height: 65px;
+  order: 0;
+  padding: 140px 200px;
+ }
+ 
+ .site-navigation {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+    
+}
+
+.shopping-cart-navigation {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style: none; 
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-list {
+display: flex;
+justify-content: space-between;
+margin: 0;
+  padding: 0;
+
+  list-style: none;	
+	
+}
+.products-item {
+width: 300px;
+
+}
+
+.main-footer {
+   margin-top: 70px;
+   margin: 0;
+   padding: 140px 0;
+   display: flex;
+justify-content: space-between;
+flex-direction: row;
+  }
+  
+  .footer-social {
+	width: 260px;  
+	margin-right: 130px;  
+	
+  }
+  
+  .footer-promo {
+	margin: 0;
+	width: 550px;
+	margin-left: auto;
+	text-align: left;
+  }
+  
+.main-header-wrapper {
+background-color: #eeeeee;
+margin-bottom: 120px;	 
+}
+
+.page-title {
+	text-align: center;
+	
+}
+
+.filters {
+  width: 270px;
+
+}
+
+.catalog {
+  width: 760px;
+}
+  
+  .catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 30px;
+   margin-right: 40px;
+  
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
