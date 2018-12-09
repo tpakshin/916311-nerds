@@ -7,8 +7,9 @@
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/stylesheet.css" rel="stylesheet">
     </head>
-    <body>
-        <header class="main-header">
+    <body class="inner-page">
+        <div class="main-header-wrapper">
+		<header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo" href="index.html">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии «nёrds»">
@@ -26,8 +27,10 @@
         </header>
         <main class="container">
             <h1 class="page-title">Магазин готовых шаблонов</h1>
+			</div>
             <!-- Позже здесь будет блок который мы разметим -->
-            <section class="filters">
+            <div class="catalog-columns">
+			<section class="filters">
                 <h2 class="visually-hidden">Фильтр макетов</h2>
                 <form class="filter" method="get"
                     action="https://echo.htmlacademy.ru">
@@ -145,6 +148,7 @@
                     </li>
                 </ul>
             </section>
+			</div>
         </main>
 		<footer class="main-footer">
                                
@@ -154,13 +158,15 @@
                         <li><a class="social-button" href="#">Фейсбук</a></li>
                         <li><a class="social-button" href="#">Инстаграм</a></li>
                     </ul>
-                    <p class="footer-label"><b>Давайте дружить, это выгодно!</b></p>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                    <div class="footer-promo">
+					<p class="footer-label"><b>Давайте дружить, это выгодно!</b></p>
+                    <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+                </div>
                 </div>
             </footer>
-			<section class="contact pop-up">
+					<section class="contact pop-up">
                     <h2>Напишите нам</h2>
-					<button class="button button-grey" type="submit">Отправить</button>
+					<button class="button button-red" type="submit">Отправить</button>
                         <button class="modal-close" type="button">
                         <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть">
                     </button>
@@ -175,19 +181,20 @@
                         </p>
                         <p class="contact-item">
                             <label for="contact-comment">Текст письма:</label>
-                            <textarea name="comment" id="contact-comment" rows="5">В свободной форме</textarea>
+                            <textarea name="comment" id="contact-comment" placeholder="В свободной форме"></textarea>
                         </p>
                     </form>
                 </section>
-				<!-- НЕ нужно было размечать
-                    <div>
-					<img src="#" width="380" height="240" alt="Карта с адресом дизайн студии">
-                    <p class="footer-contacts">NЁRDS DESIGN STUDIO<br>
-                    191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, Д. 19/8<br>
-                    тел. +7 (812) 275-75-75<br>
-                    <a class="button" href="contacts.html">НАПИШИТЕ НАМ</a>
-                    </p>
-					</div>-->
+			<!-- НЕ нужно было размечать
+			<div>
+            <img src="img/map.png" width="1440" height="416" alt="Карта с адресом дизайн студии">
+            <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
+            <p class="footer-contacts">Nёrds design studio<br>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, Д. 19/8<br>
+            тел. +7 (812) 275-75-75<br>
+            <a class="button" href="contacts.html">Напишите нам/a>
+            </p>
+			</div>-->
     </body>
 </html>
