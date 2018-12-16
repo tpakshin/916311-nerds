@@ -10,7 +10,7 @@
    <body class="inner-page">
       <div class="top-wrapper">
          <header class="main-header">
-         <div class="container flex-row">
+         <div class="container">
 		 <nav class="main-navigation">
             <a class="main-header-logo">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии «nёrds»">
@@ -23,7 +23,7 @@
                   <li><a href="contacts.html">Контакты</a></li>
                </ul>
                <ul class="shopping-cart-navigation">
-                  <li><a href="shopping-cart.html">Корзина</a></li>
+                  <li><a class="shopping-cart-link" href="shopping-cart.html">Корзина</a></li>
                </ul>
             </div>
          </nav>
@@ -31,8 +31,7 @@
       </div>
       <main>
          <h1 class="page-title">Магазин готовых шаблонов</h1>
-         </div>
-		 <div class="container flex-row">
+         <div class="container flex-row">
 		 <div class="catalog-columns">
             <section class="filters">
                <h2 class="visually-hidden">Фильтр макетов</h2>
@@ -43,7 +42,7 @@
                      <div class="range-filter">
                         <div class="range-controls">
                            <div class="scale">
-                              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                              <div class="bar"></div>
                            </div>
                            <div class="toggle toggle-min"></div>
                            <div class="toggle toggle-max"></div>
@@ -58,19 +57,19 @@
                      <legend>Сетка:</legend>
                      <ul>
                         <li class="filter-option">
-                           <input class="visually-hidden" type="radio" name="layout-group" value="responsive" id="filter-responsive" checked>
+                           <input class="visually-hidden filter-input-radio" type="radio" name="layout-group" value="responsive" id="filter-responsive" checked>
                            <label for="filter-responsive">
                            Адаптивная
                            </label>
                         </li>
                        <li class="filter-option">
-                           <input class="visually-hidden" type="radio" name="layout-group" value="fixed" id="filter-fixed">
+                           <input class="visually-hidden filter-input-radio" type="radio" name="layout-group" value="fixed" id="filter-fixed">
                            <label for="filter-fixed">
                            Фиксированная
                            </label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden" type="radio" name="layout-group" value="liquid" id="filter-liquid">
+                           <input class="visually-hidden filter-input-radio" type="radio" name="layout-group" value="liquid" id="filter-liquid">
                            <label for="filter-liquid">
                            Резиновая
                            </label>
@@ -81,31 +80,31 @@
                      <legend>Особенности:</legend>
                      <ul>
                         <li class="filter-option">
-                           <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                            <label for="filter-slider">
                            Слайдер
                            </label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden"  type="checkbox" name="advantages" id="filter-advantages">
+                           <input class="visually-hidden filter-input-checkbox"  type="checkbox" name="advantages" id="filter-advantages">
                            <label for="filter-advantages">
                            Блок преимуществ
                            </label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                            <label for="filter-news">
                            Новости
                            </label>
                         </li>
                         <li class="filter-option">
-                           <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                            <label for="filter-gallery">
                            Галерея
                            </label>
                         </li>
                        <li class="filter-option">
-                           <input class="visually-hidden" type="checkbox" name="shopcart" id="filter-shopcart">
+                           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="shopcart" id="filter-shopcart">
                            <label for="filter-shopcart">
                            Корзина
                            </label>
@@ -119,7 +118,7 @@
                <h2 class="visually-hidden">Список готовых шаблонов</h2>
                <ul class="catalog-list">
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-1.jpg" width="360" height="576" alt="SEDONA - информационный сайт для туристов">
                      <div class="catalog-pop-up">
                         <h3><a href="#">Sedona</a></h3>
@@ -128,7 +127,7 @@
                      </div>
                   </li>
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-2.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android">
                      <div class="catalog-pop-up">
                         <h3><a href="#">Pink App</a></h3>
@@ -137,7 +136,7 @@
                      </div>
                   </li>
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-3.jpg" width="360" height="576" alt="Барбершоп Бородинский">
                      <div class="catalog-pop-up">
                         <h3><a href="#">Barbershop</a></h3>
@@ -146,7 +145,7 @@
                      </div>
                   </li>
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-4.jpg" width="360" height="576" alt="Интернет магазин вязаных игрушек">
                      <div class="catalog-pop-up">
                         <h3><a href="#">Mishka</a></h3>
@@ -155,7 +154,7 @@
                      </div>
                   </li>
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-5.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации">
                      <div class="catalog-pop-up">
                         <h3><a href="#">A plus</a></h3>
@@ -164,7 +163,7 @@
                      </div>
                   </li>
                   <li class="catalog-item">
-                     <img class="browser-window" src="img/browser.svg" width="360" height="40" alt="Окно браузера»">
+                     <div class="browser-window"></div>
 					 <img src="img/template-6.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса">
                      <div class="catalog-pop-up">
                         <h3><a href="#">Кваст</a></h3>
