@@ -766,25 +766,81 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 .contact.pop-up h2 {
   color: #000000;
   font-size: 45px;
-  line-height: 45px;	
+  line-height: 45px;
+  margin: 0;
+  margin-bottom: 50px;  
 }
 
 .contact.pop-up {
-  display: none;
+  /*display: none;*/
+  width: 960px;
+  padding: 75px 100px 85px;
 }
-
+  
 .contact-form {
-  color: #444444;	
+  display: flex;
+  color: #444444;
+  flex-wrap: wrap;  
+  font: inherit;
+  justify-content: space-between;
 }
 
 .contact-form:focus {
-  color: #000000;	
+  color: #000000;
+
 }
 
 .contact-form label {
   color: #000000;	
   line-height: 18px;
 }
+.modal-close {
+  background-color: #ffffff;
+  border: 0; 
+}
+
+.contact-form input,
+.contact-form textarea {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000000;
+  color: #000000;
+  outline: none;
+}
+
+
+.contact-form input:invalid 
+.contact-form input:invalid{
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.contact-item input {
+  width: 360px;
+  margin: 0;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.contact-item textarea {
+  width: 760px;
+  margin: 0;
+  margin-bottom: 48px;
+  box-sizing: border-box;
+}	
+
+.contact-item label {
+  display: block;
+}
+
+.button.button-red.pop-up-button {
+  display: block;
+  width: 260px;
+}
+
 .main-footer {
   margin: 70px 0;
   padding: 0;
@@ -868,8 +924,8 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 
 .contact-form {
  font: inherit;
- border: 2px solid #444444;
-}
+ }
+
 
 .contact-form input:focus {
   border-color: #000000;
@@ -880,6 +936,7 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
   border-color: #e74246;
   color: #e74246;
 }
+
 
 /* ----- Сеточные стили ----- */
 
