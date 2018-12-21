@@ -245,7 +245,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   left: 0;
 
-  height: 3px;
+  height: 2px;
 
   background-color: #fb565a;
 }
@@ -326,7 +326,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 .browser-window {
@@ -357,7 +357,7 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
   position:relative;
   text-transform: uppercase;
   width: 360px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
   margin-right: 40px;
 }
 
@@ -418,11 +418,15 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
   background-color: #eeeeee;
   margin: 0;
   padding: 0;
-  padding-top: 85px;
+  padding-top: 68px;
   padding-bottom: 115px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
-	
+
+.page-title h1 {
+  margin: 0;
+  padding: 0;
+}	
 .products-list {
   display: flex;
   align-items: flex-start;
@@ -550,17 +554,21 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 35px;
+  margin-bottom: 55px;
+}
+
+.filter legend:first-child {
+  margin-bottom: 26px;
 }
 
 .filter legend {
-  margin-bottom: 26px;
+  margin-bottom: 14px;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
   font-weight: 700;
-}
+ }
 
 .filter ul {
   padding: 0;
@@ -580,7 +588,7 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 
 .filter-item legend {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -661,7 +669,7 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 27px;
 }
 
 .filter-option {
