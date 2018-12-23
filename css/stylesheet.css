@@ -235,7 +235,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current a:not([href]) {
   background-color: #eeeeee;
-}
+ }
 
 .site-navigation-current::after {
   content: "";
@@ -244,8 +244,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   bottom: 0;
   left: 0;
-
-  height: 2px;
+    height: 2px;
 
   background-color: #fb565a;
 }
@@ -554,7 +553,7 @@ box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .filter legend:first-child {
